@@ -1,0 +1,195 @@
+ @import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.home{
+    background: url(../img/background.jpg);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    
+}
+
+nav{
+    background: orange;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: bold;
+    font-family: "Coda Caption";
+ 
+}
+
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    
+}
+
+.discord:hover{
+    background: #7289da;
+    transition: 0.4s;
+}
+
+a:hover{
+    background: darkorange;
+    transition: 0.5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 1000px){
+    label.logo{
+        font-size: 20px;
+       
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    nav{
+        background: orange;
+        height: 80px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        padding-top: 50px;
+        width: 100%;
+        height: 100vh;
+        background-color: darkorange;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        padding: 20px 0;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background:none;
+        color: orange;
+    }
+
+    a.discord:hover{
+        background:none;
+        color: #7289da;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+#alcim{
+    text-align: center;
+    font-family: "Galada";
+    font-size: 36px;
+    font-weight: bold;
+    padding: 100px;
+    padding-top: 200px;
+}
+
+
+
+div .title, .altitle{
+    color:orange;
+    margin: 50px 0;
+}
+
+
+
+/*
+szabályzat
+*/
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+.altitle {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 5%
+}
+
+.rules {
+    color: red;
+    font-size: 24px;
+    margin: 50px;
+    text-align: center justify;
+
+}
+
+/*
+jelentkezés
+*/
+
